@@ -14,7 +14,10 @@ public class SnakeAndLadder {
         int check = (int)(Math.random()*3);
         switch (check) {
             case ladder:
-                result += random;
+                if( (player_Position + random) <= 100 ){
+                    player_Position += random; }
+                else
+                    player_Position += 0;
                 break;
             case snake:
                 result -= random;
@@ -27,9 +30,10 @@ public class SnakeAndLadder {
             if ( player_Position < 0 ){
                 player_Position = 0;
             }
-            count++;
+            player_Position = player_Position + result;
+            //count++;
         }
 
-        System.out.println("Winning position of player : "+player_Position +" WINNNER "+"\n"+"No. of times dice rolled "+count);
+        System.out.println("Winning position of player : "+ player_Position +" WINNNER ");
     }
 }
