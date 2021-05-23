@@ -27,13 +27,15 @@ public class SnakeAndLadder {
                 break;
         }
             player_Position += result;
+
             if ( player_Position < 0 ){
                 player_Position = 0;
             }
             player_Position = player_Position + result;
-            //count++;
+            count++;
+            System.out.println("Position : " +player_Position+ " at dice roll " +dice);
         }
 
-        System.out.println("Winning position of player : "+ player_Position +" WINNNER ");
+        System.out.println("Winning position of player : "+ player_Position +" WINNNER "+"\n"+"No.of times the dice rolled : "+count);
     }
 }
