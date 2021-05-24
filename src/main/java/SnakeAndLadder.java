@@ -12,8 +12,8 @@ public class SnakeAndLadder {
             int random = (int)(Math.random()*6) + 1;
             //System.out.println(" Random variables from 1 - 6 : "+random);
             int result=0;
-            check = (int)(Math.random()*3);
-            switch (check) {
+            int check1 = (int)(Math.random()*3);
+            switch (check1) {
                 case ladder:
                     if( (player1_Position + random) <= 100 ){
                         player1_Position += random; }
@@ -46,8 +46,8 @@ public class SnakeAndLadder {
             int random = (int)(Math.random()*6) + 1;
             //System.out.println(" Random variables from 1 - 6 : "+random);
             int result=0;
-            check = (int)(Math.random()*3);
-            switch (check) {
+            int check2 = (int)(Math.random()*3);
+            switch (check2) {
                 case ladder:
                     if( (player2_Position + random) <= 100 ){
                         player2_Position += random; }
