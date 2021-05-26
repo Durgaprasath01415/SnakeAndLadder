@@ -4,11 +4,12 @@ public class SnakeAndLadder {
 
     public static final int winning_Points = 100;
     public static int check=0;
+    public static int player2_Position = 0;
+    public static int player1_Position = 0;
 
 
     public static void player() {
         if (check == 1) {
-            int player1_Position = 0;
             int count = 1;
             while (player1_Position < winning_Points) {
                 int random = (int) (Math.random() * 6) + 1;
@@ -39,10 +40,10 @@ public class SnakeAndLadder {
                 //System.out.println("Position : " +player_Position+ " at dice roll " +dice);
             }
             System.out.println("Winning position of player1 : " + player1_Position + " WINNNER " + "\n" + "No.of times the dice rolled : " + count);
+            System.out.println("Winning position of player2 : " + player2_Position + " WINNNER " + "\n" + "No.of times the dice rolled : " + count);
 
     }
          else {
-            int player2_Position = 0;
             int count = 1;
             while (player2_Position < winning_Points) {
                 int random = (int) (Math.random() * 6) + 1;
@@ -72,6 +73,7 @@ public class SnakeAndLadder {
                 count++;
                 //System.out.println("Position : " +player_Position+ " at dice roll " +dice);
             }
+            System.out.println("Winning position of player1 : " + player1_Position + " WINNNER " + "\n" + "No.of times the dice rolled : " + count);
             System.out.println("Winning position of player2 : " + player2_Position + " WINNNER " + "\n" + "No.of times the dice rolled : " + count);
         }
 
