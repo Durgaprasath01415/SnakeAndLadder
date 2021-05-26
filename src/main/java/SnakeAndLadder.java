@@ -3,7 +3,7 @@ public class SnakeAndLadder {
     public static final int snake = 1;
 
     public static final int winning_Points = 100;
-    public static int check=0;
+    public static int check = 0;
     public static int player2_Position = 0;
     public static int player1_Position = 0;
 
