@@ -73,7 +73,7 @@ public class SnakeAndLadder {
         }
         System.out.println("");
         if(playerOne == END_POSITION)
-        System.out.println("Player 1 won the game");
+            System.out.println("Player 1 won the game");
         else if (playerTwo == END_POSITION){
             System.out.println("Player 2 won the game");
         }
